@@ -1,6 +1,6 @@
 package j09_클래스;
 
-public class J09_Student {
+public class J09_Student {      //클래스는 변수와 메소드를 묶어놓은 것
 	
 	String name = "김상현";
 	int age = 28;
