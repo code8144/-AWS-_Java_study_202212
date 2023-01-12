@@ -8,7 +8,7 @@ public interface Calculator {
 	
 	public double minus(double x, double y);
 	
-	public default double multiplication(double x, double y) { //메소드를 쓰고싶으면 default를 써준다.
+	public default double multiplication(double x, double y) { //메소드를 쓰고싶 으면 default를 써준다.
 		
 		return x * y; //일반변수(멤버변수)를 가지지 못한다. 대신 상수는 가질 수 있음.
 	}

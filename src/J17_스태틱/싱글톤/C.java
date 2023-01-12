@@ -1,0 +1,12 @@
+package J17_스태틱.싱글톤;
+
+public class C {
+	
+	public C() {}
+
+	public void showAll() {
+
+		A.getInstance().showStudents();
+	}
+
+}
