@@ -25,7 +25,8 @@ public class StudentArrayList {
 		
 		System.out.println(students);
 		
-		String searchName = "손민재"; //이름이 searchName인 학생을 찾아서 학년을 4학년으로 바꿔라
+		String searchName = "손민재"; 
+		//이름이 searchName인 학생을 찾아서 학년을 4학년으로 바꿔라
 		//만약 searchName과 동일한 이름이 없으면 "검색실패" 메세지 출력
 		
 		boolean flag = true;
