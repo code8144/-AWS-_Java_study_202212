@@ -17,7 +17,7 @@ public class Main2 {
 	public static void main(String[] args) {	//메소드 호출전에 클래스안에 들어있는 메소드를 호출하려면
 		Main2 main = new Main2();				//클래스를 먼저 생성해줘야 클래스안에 있는 메소드 사용가능
 		
-		CMRespDto<String> hello 
+		 CMRespDto<String> hello 
 				= new CMRespDto<String>(200, "성공", "안녕하세요");
 		
 		CMRespDto<Integer> score = new CMRespDto<Integer>(200, "성공", 85);
