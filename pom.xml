@@ -6,6 +6,8 @@
   <name>javastudy</name>
   
   <dependencies>
+	  
+	  
 	<dependency>
    	 	<groupId>org.projectlombok</groupId>
     	<artifactId>lombok</artifactId>
@@ -22,6 +24,12 @@
     	<artifactId>jbcrypt</artifactId>
     	<version>0.4</version>
 	</dependency>
+	<dependency>
+    <groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>8.0.32</version>
+	</dependency>
+
 
   </dependencies>
   

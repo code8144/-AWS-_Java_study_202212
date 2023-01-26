@@ -9,6 +9,7 @@ import org.mindrot.jbcrypt.BCrypt;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import usermanagement.entity.RoleDtl;
 import usermanagement.entity.User;
 import usermanagement.repository.UserRepository;
 
@@ -60,13 +61,15 @@ public class UserService {
 		user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
 		System.out.println("암호화 후");
 		System.out.println(user);
-//      String pw = BCrypt.hashpw("1234", BCrypt.gensalt());
-//      System.out.println(BCrypt.hashpw("1234", BCrypt.gensalt()));
-//      System.out.println(pw);
-//      System.out.println(BCrypt.checkpw("1234", pw));
-//      user.setPassword(BCrypt.);
 
 		userRepository.saveUser(user);
+		
+		RoleDtl roleDtl = RoleDtl.builder()
+				.roleId(3)
+				.userId(user.getUserId())
+				.build();
+		
+		userRepository.saveRoleDtl(roleDtl);
 
 		response.put("ok", "회원가입 성공.");
 
