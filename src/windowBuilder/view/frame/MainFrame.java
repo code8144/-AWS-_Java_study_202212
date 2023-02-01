@@ -1,4 +1,4 @@
-package windowBuilder.view;
+package windowBuilder.view.frame;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
