@@ -4,7 +4,7 @@ public class Computer implements Calculator {
 
 	@Override
 	public double minus(double x, double y) {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 	
