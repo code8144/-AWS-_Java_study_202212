@@ -1,4 +1,4 @@
-package J25.소켓.multiSocket.client;
+package J25_소켓.multiSocket.client;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -6,12 +6,13 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+import com.mysql.cj.jdbc.exceptions.MySQLStatementCancelledException;
+
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-
 public class ClientSend extends Thread {
-	
+
 	private final Socket socket;
 	
 	@Override
@@ -22,16 +23,21 @@ public class ClientSend extends Thread {
 			Scanner scanner = new Scanner(System.in);
 			
 			while(true) {
-				if(Client.name == null) {
-					Client.name = scanner.nextLine();
-					writer.println(scanner.nextLine());
-					continue;
-				}
+				writer.println(scanner.nextLine());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
 	}
-
 }
+
+
+
+
+
+
+
+
+
+

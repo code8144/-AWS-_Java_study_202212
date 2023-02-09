@@ -3,9 +3,8 @@ package usermanagement.entity;
 import lombok.Builder;
 import lombok.Data;
 
-@Data
 @Builder
-
+@Data
 public class RoleDtl {
 	private int roleDtlId;
 	private int roleId;
